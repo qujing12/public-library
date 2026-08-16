@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的书架 - 电子书下载站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">📚 我的书架</a>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#books">书籍</a></li>
+                <li><a href="#about">关于</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </nav>
+
+    <!-- 首页英雄区 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>欢迎来到我的书架</h1>
+            <p class="hero-subtitle">精选好书，免费下载，让阅读触手可及</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索书名、作者或标签...">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="bookCount">0</span>
+                    <span class="stat-label">本好书</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="categoryCount">0</span>
+                    <span class="stat-label">个分类</span>
+                </div>
+            </div>
+            <a href="#books" class="btn btn-primary">开始探索</a>
+        </div>
+    </section>
+
+    <!-- 书籍模块 -->
+    <section id="books" class="section">
+        <div class="container">
+            <h2 class="section-title">📖 精选书籍</h2>
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-btn active" data-filter="all">全部</button>
+            </div>
+            <div class="books-grid" id="booksGrid">
+                <!-- 书籍卡片由JS动态生成 -->
+            </div>
+            <div class="empty-state" id="emptyState" style="display:none;">
+                <p>😕 没有找到相关书籍，试试其他关键词？</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于模块 -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">👤 关于本站</h2>
+            <div class="about-content">
+                <div class="about-avatar">
+                    <div class="avatar-placeholder">📚</div>
+                </div>
+                <div class="about-text">
+                    <p>你好！这是一个个人电子书分享站，汇集了精选好书，全部免费下载。</p>
+                    <p>书籍数据同步自在线表格，你可以随时在表格中增删改查，网站会自动更新。</p>
+                    <div class="about-tags">
+                        <span class="tag">免费分享</span>
+                        <span class="tag">持续更新</span>
+                        <span class="tag">在线阅读</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 我的书架 | 用阅读和思考丈量世界</p>
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="mailto:you@example.com">邮箱联系</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 书籍详情弹窗 -->
+    <div class="modal-overlay" id="bookModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-body">
+                <div class="modal-cover">📖</div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-author" id="modalAuthor"></p>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <div class="modal-meta">
+                        <span class="meta-item" id="modalCategory"></span>
+                        <span class="meta-item" id="modalFormat"></span>
+                        <span class="meta-item" id="modalSize"></span>
+                    </div>
+                    <div class="modal-tags" id="modalTags"></div>
+                    <div class="modal-rating" id="modalRating"></div>
+                    <a href="#" class="btn btn-download" id="modalDownload">⬇ 立即下载</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

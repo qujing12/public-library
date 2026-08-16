@@ -1,0 +1,101 @@
+{
+  "books": [
+    {
+      "title": "总论",
+      "author": "Randal E. Bryant",
+      "desc": "计算机科学的经典之作，涵盖位级表示、处理器架构、存储器层次结构、链接、异常控制流、虚拟内存、系统级I/O等核心内容。",
+      "category": "tech",
+      "categoryLabel": "技术",
+      "tags": ["系统", "底层", "经典"],
+      "rating": 5,
+      "downloadUrl": "https://pan.quark.cn/s/f62c76716bef",
+      "format": "PDF",
+      "size": "约45MB"
+    },
+    {
+      "title": "设计模式",
+      "author": "Erich Gamma",
+      "desc": "面向对象设计的经典指南，总结了23种经典设计模式，是软件工程师必读之作。",
+      "category": "tech",
+      "categoryLabel": "技术",
+      "tags": ["设计模式", "OOP", "架构"],
+      "rating": 5,
+      "downloadUrl": "#",
+      "format": "PDF",
+      "size": "约12MB"
+    },
+    {
+      "title": "思考，快与慢",
+      "author": "Daniel Kahneman",
+      "desc": "诺贝尔奖得主揭示人类决策的两套系统，探讨直觉与理性如何在日常生活中发挥作用。",
+      "category": "psychology",
+      "categoryLabel": "心理",
+      "tags": ["心理学", "决策", "思维"],
+      "rating": 4,
+      "downloadUrl": "#",
+      "format": "PDF",
+      "size": "约8MB"
+    },
+    {
+      "title": "三体",
+      "author": "刘慈欣",
+      "desc": "中国科幻的里程碑之作，讲述人类文明与三体文明的博弈，想象力震撼人心。",
+      "category": "literature",
+      "categoryLabel": "文学",
+      "tags": ["科幻", "文学", "中国"],
+      "rating": 5,
+      "downloadUrl": "#",
+      "format": "PDF",
+      "size": "约3MB"
+    },
+    {
+      "title": "算法导论",
+      "author": "Thomas H. Cormen",
+      "desc": "算法领域的经典教材，全面系统地介绍算法设计与分析，被誉为算法圣经。",
+      "category": "tech",
+      "categoryLabel": "技术",
+      "tags": ["算法", "数据结构", "经典"],
+      "rating": 5,
+      "downloadUrl": "#",
+      "format": "PDF",
+      "size": "约65MB"
+    },
+    {
+      "title": "被讨厌的勇气",
+      "author": "岸见一郎",
+      "desc": "阿德勒心理学的入门经典，以对话形式阐述自我接纳与自由人生的理念。",
+      "category": "psychology",
+      "categoryLabel": "心理",
+      "tags": ["心理学", "阿德勒", "自我"],
+      "rating": 4,
+      "downloadUrl": "#",
+      "format": "PDF",
+      "size": "约5MB"
+    },
+    {
+      "title": "创业维艰",
+      "author": "Ben Horowitz",
+      "desc": "硅谷投资人分享创业实战经验，不灌鸡汤，只讲真实残酷的创业历程。",
+      "category": "business",
+      "categoryLabel": "商业",
+      "tags": ["创业", "管理", "实战"],
+      "rating": 4,
+      "downloadUrl": "#",
+      "format": "PDF",
+      "size": "约6MB"
+    },
+    {
+      "title": "原则",
+      "author": "Ray Dalio",
+      "desc": "桥水基金创始人的生活原则，分享他如何建立原则体系来应对人生挑战。",
+      "category": "business",
+      "categoryLabel": "商业",
+      "tags": ["管理", "决策", "人生"],
+      "rating": 4,
+      "downloadUrl": "#",
+      "format": "PDF",
+      "size": "约10MB"
+    }
+  ],
+  "tutorials": []
+}
