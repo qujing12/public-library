@@ -1,7 +1,3 @@
-const booksData = [
-    {title: '深入理解计算机系统', author: 'Randal E. Bryant', desc: '计算机科学经典之作，涵盖位级表示、处理器架构等核心内容。', category: 'tech', categoryLabel: '技术', tags: ["系统", "底层", "经典"], rating: 5, downloadUrl: 'https://pan.quark.cn/s/xxxxx', format: 'PDF', size: '约45MB'},
-    {title: '三体', author: '刘慈欣', desc: '中国科幻的里程碑之作。', category: 'literature', categoryLabel: '文学', tags: ["科幻", "文学", "中国"], rating: 5, downloadUrl: 'https://pan.quark.cn/s/xxxxx', format: 'PDF', size: '约3MB'},
-];
 function renderBooks(filter, search) {
     let filtered = booksData;
     if (filter && filter !== "all") filtered = filtered.filter(b => b.category === filter);
